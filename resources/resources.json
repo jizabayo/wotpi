@@ -1,0 +1,36 @@
+{
+    "pi":{
+        "name":"pi4",
+        "description":"A simple WoT connected Raspberry pi",
+        "port":3000,
+        "sensors":{
+            "temperature":{
+                "name":"Temperature sensor",
+                "description":"An ambient temperature sensor",
+                "unit":"celcius",
+                "value":0,
+                "gpio":17
+            },
+            "humidity":{
+                "name":"Humidity sensor",
+                "description":"An ambient humidity sensor",
+                "unit":"%",
+                "value":0,
+                "gpio":17
+            },
+            "pir":{
+                "name":"Passive infrared",
+                "description":"A passive infrared sensor",
+                "value":true,
+                "gpio":24
+            }
+        },
+        "actuators":{
+            "led":{
+                "name":"LED",
+                "value":false,
+                "gpio":18
+            }
+        }
+    }
+}
